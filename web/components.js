@@ -211,4 +211,13 @@ function COM(props) {
 		)
 	);
 }
-export default COM;
+function Time(props) {
+	const time = new Date().toLocaleTimeString();
+	return React.createElement(
+		'h1',
+		null,
+		time
+	);
+}
+
+export { COM, Time };

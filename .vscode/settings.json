@@ -1,0 +1,12 @@
+{
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "\\.jsx$",
+				"cmd": "node ${workspaceRoot}/build/index.js",
+				"isAsync": true
+			}
+		]
+	},
+	"editor.formatOnSave": true
+}

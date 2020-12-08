@@ -201,4 +201,12 @@ function COM(props) {
 		</div>
 	);
 }
-export default COM
+function Time(props) {
+	const time = new Date().toLocaleTimeString();
+	return <h1>{time}</h1>;
+}
+
+
+
+
+export { COM, Time }

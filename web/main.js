@@ -1,5 +1,5 @@
 import '../lib/index.js'
-import COM from './components.js'
+import { COM, Time } from './components.js'
 let prop = {
 	btnOK: ['主描述', '次描述', '次描述'],
 	title: '标题建议单行不超过两行标题建议单行不超过',
@@ -11,4 +11,16 @@ let prop = {
 	onClose: () => { },
 }
 let C = COM(prop)
-ReactDOM.render(C, document.getElementById('root'));
+
+
+
+const rootDom = document.getElementById("root");
+
+function tick() {
+	ReactDOM.render(Time(), rootDom);
+	// render(Time, rootDom);
+}
+
+setInterval(() => tick(), 1000);
+
+
